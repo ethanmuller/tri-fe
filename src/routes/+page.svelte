@@ -4,5 +4,5 @@
 </script>
 
 {#each data.posts as post}
-  <p><audio controls src="{post.file.url}">{post.notes}</audio></p>
+  <div class="c-post"><audio controls src="{post.file.url}"></audio>{post.notes}</div>
 {/each}
