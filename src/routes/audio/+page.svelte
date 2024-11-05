@@ -21,7 +21,7 @@
 </script>
 
 {#each data.posts as post}
-  {#if isPublic(post.tags) && isAudio(post.tags)}
+  {#if isPublic(post.tags) && isAudio(post.tags) && post.file}
     <div class="c-post"><audio controls src="{post.file.url}"></audio>{post.notes}</div>
   {/if}
 {/each}

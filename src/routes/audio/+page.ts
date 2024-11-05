@@ -9,7 +9,7 @@ export const load: PageLoad = async ({ fetch }) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      query: "query { posts { notes tags file {filename url} } }",
+      query: "query { posts( orderBy: {order: asc} ) { notes tags file {filename url} } }",
     }),
   })
   const result = await response.json()
