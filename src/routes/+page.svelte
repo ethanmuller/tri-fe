@@ -23,7 +23,7 @@
 <main>
 	{#each data.posts as post}
 	  {#if isPublic(post.tags) && isAudio(post.tags) && post.file}
-	    <div class="c-post"><audio controls src="{post.file.url}"></audio><a href="{post.file.url}"><img src="/audio/download.gif" alt="download" /></a><div>{post.notes} </div></div>
+	    <div class="c-post"><audio controls src="{post.file.url}"></audio><div class="c-post__text">{post.notes}</div><a href="{post.file.url}" class="c-post__dl"><img src="/audio/download.gif" alt="download" /></a></div>
 	  {/if}
 	{/each}
 </main>

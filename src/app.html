@@ -14,14 +14,33 @@ body, html {
 body {
   background: #ccc;
 }
+
 .c-post {
   display: flex;
-  gap: 1rem;
-  padding: 3rem 1rem;
-  align-items: center;
   text-transform: uppercase;
+  flex-wrap: wrap;
   color: rgba(0, 0, 0, 0.7);
   font-family: monospace;
+  align-items: start;
+  padding: 5rem 0;
+}
+
+.c-post audio {
+	grid-column: span 2;
+	width: 100%;
+	padding-bottom: 1rem;
+	padding: 0 1rem 1rem;
+}
+
+.c-post__text {
+	flex: 1;
+	align-self: center;
+	padding-left: 1rem;
+}
+
+.c-post__dl {
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 main {
